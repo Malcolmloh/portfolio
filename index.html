@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loh Jun Jie Malcolm | Software Engineering Portfolio</title>
+    <meta name="description" content="Digital Portfolio of Loh Jun Jie Malcolm, Diploma in Infocomm & Media Engineering (Software & Applications) graduate and aspiring Junior Software Engineer.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            DEFAULT: '#1B365D',
+                            light: '#274C82',
+                            dark: '#122541',
+                        },
+                        accent: {
+                            DEFAULT: '#0284C7',
+                            light: '#E0F2FE',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-sky-200 selection:text-navy">
+
+    <!-- ==================== STICKY NAVIGATION BAR ==================== -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Brand / Logo -->
+                <a href="#home" class="flex items-center space-x-2 group">
+                    <span class="w-9 h-9 rounded-lg bg-navy text-white flex items-center justify-center font-bold text-sm tracking-tight group-hover:bg-accent transition-colors">
+                        ML
+                    </span>
+                    <span class="font-bold text-navy text-lg tracking-tight">Malcolm Loh</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8" aria-label="Primary Navigation">
+                    <a href="#home" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">Home</a>
+                    <a href="#about" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">About</a>
+                    <a href="#projects" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">Projects</a>
+                    <a href="#skills" class="text-sm font-medium text-slate-600 hover:text-navy transition-colors">Skills &amp; Experience</a>
+                    <a href="#contact" class="px-4 py-2 rounded-lg bg-navy text-white text-sm font-medium hover:bg-navy-light transition-colors shadow-sm">Contact</a>
+                </nav>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-btn" type="button" class="md:hidden p-2.5 rounded-lg text-slate-600 hover:text-navy hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-navy" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                    <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-1 shadow-md">
+            <a href="#home" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100 hover:text-navy">Home</a>
+            <a href="#about" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100 hover:text-navy">About</a>
+            <a href="#projects" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100 hover:text-navy">Projects</a>
+            <a href="#skills" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 hover:bg-slate-100 hover:text-navy">Skills &amp; Experience</a>
+            <a href="#contact" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-white bg-navy hover:bg-navy-light mt-2 text-center">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== 1. HERO SECTION ==================== -->
+        <section id="home" class="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-slate-100/80 pt-16 pb-20 sm:pt-24 sm:pb-28 border-b border-slate-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-sky-50 border border-sky-200 text-sky-700 text-xs font-semibold uppercase tracking-wider mb-6">
+                        <span class="w-2 h-2 rounded-full bg-sky-500"></span>
+                        <span>Open to Junior Software Engineer Opportunities</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-navy tracking-tight leading-tight">
+                        Loh Jun Jie Malcolm
+                    </h1>
+                    
+                    <p class="mt-4 text-lg sm:text-xl font-semibold text-slate-700">
+                        Diploma in Infocomm &amp; Media Engineering Graduate <span class="text-accent hidden sm:inline">|</span><br class="sm:hidden"> Aspiring Software Engineer
+                    </p>
+                    
+                    <p class="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+                        Full-stack web developer, QA automation enthusiast, and former SAF Platoon Commander building reliable, mission-ready software systems in C#, Java, PHP, and SQL.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                        <a href="#projects" class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-navy text-white font-semibold text-sm sm:text-base hover:bg-navy-light transition-all shadow-md hover:shadow-lg">
+                            <span>View Projects</span>
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </a>
+                        <a href="./Malcolm_Loh_Resume_ST_Engineering_MSS.pdf" download class="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-white text-navy font-semibold text-sm sm:text-base border border-slate-300 hover:border-navy hover:bg-slate-50 transition-all shadow-sm">
+                            <svg class="w-4 h-4 mr-2 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                            <span>Download Resume (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 2. ABOUT ME SECTION ==================== -->
+        <section id="about" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-accent">About Me</h2>
+                    <p class="mt-2 text-2xl sm:text-3xl font-bold text-navy tracking-tight">
+                        Engineering dependable software with operational discipline
+                    </p>
+                    <p class="mt-5 text-slate-600 text-base sm:text-lg leading-relaxed">
+                        I am a Diploma in Infocomm &amp; Media Engineering graduate from <strong>Nanyang Polytechnic (NYP)</strong>, specialising in <strong>Software &amp; Applications</strong>. My foundation spans full-stack web development, RESTful API design, relational databases, and automated software testing.
+                    </p>
+                    <p class="mt-4 text-slate-600 text-base sm:text-lg leading-relaxed">
+                        During my Software Engineering Internship at <strong>NCS Pte Ltd</strong>, I contributed to enterprise web modules in C#, ASP.NET Core, and SQL Server within an Agile squad. Prior to polytechnic, serving as an <strong>SAF Platoon Commander</strong> shaped my approach to accountability, clear communication, and calm execution under pressure—qualities I bring to mission-critical software teams.
+                    </p>
+                </div>
+
+                <!-- 3 Highlight Cards -->
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Card 1 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-sky-300 hover:shadow-md transition-all">
+                        <div class="w-11 h-11 rounded-xl bg-navy/10 text-navy flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy">Full-Stack &amp; APIs</h3>
+                        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                            End-to-end web systems, RESTful APIs, and normalised relational databases using <strong>C#, ASP.NET Core, PHP, and SQL</strong>.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-sky-300 hover:shadow-md transition-all">
+                        <div class="w-11 h-11 rounded-xl bg-sky-100 text-accent flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy">Automated QA</h3>
+                        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                            Repeatable quality assurance, regression testing, and defect tracking with <strong>Java, Selenium WebDriver, and UAT</strong>.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover:border-sky-300 hover:shadow-md transition-all">
+                        <div class="w-11 h-11 rounded-xl bg-navy/10 text-navy flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-navy">Leadership</h3>
+                        <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                            <strong>Former SAF Platoon Commander</strong> leading 30+ personnel, paired with active CCA event and team operations management.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 3. FEATURED PROJECTS SECTION ==================== -->
+        <section id="projects" class="py-16 sm:py-24 bg-slate-50 border-b border-slate-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+                    <div>
+                        <h2 class="text-xs font-bold uppercase tracking-widest text-accent">Featured Projects</h2>
+                        <p class="mt-2 text-2xl sm:text-3xl font-bold text-navy tracking-tight">
+                            Selected Software Engineering Work
+                        </p>
+                    </div>
+
+                    <!-- Category Filter Tabs -->
+                    <div class="flex flex-wrap gap-2" role="tablist" aria-label="Project Categories">
+                        <button type="button" data-filter="all" class="filter-btn px-4 py-2 rounded-lg text-sm font-semibold bg-navy text-white shadow-sm transition-all">
+                            All
+                        </button>
+                        <button type="button" data-filter="full-stack" class="filter-btn px-4 py-2 rounded-lg text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:border-navy hover:text-navy transition-all">
+                            Full-Stack
+                        </button>
+                        <button type="button" data-filter="qa" class="filter-btn px-4 py-2 rounded-lg text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:border-navy hover:text-navy transition-all">
+                            QA &amp; Testing
+                        </button>
+                        <button type="button" data-filter="hackathon" class="filter-btn px-4 py-2 rounded-lg text-sm font-semibold bg-white text-slate-600 border border-slate-200 hover:border-navy hover:text-navy transition-all">
+                            Hackathon
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Projects Grid -->
+                <div id="projects-grid" class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                    <!-- PROJECT 1: OpsPulse -->
+                    <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col" data-categories="full-stack qa">
+                        <!-- NOTE: Replace the SVG visual container below with an <img> or <video> tag of your OpsPulse dashboard screenshot or demo GIF -->
+                        <div class="h-48 bg-gradient-to-br from-navy to-slate-900 p-5 flex flex-col justify-between relative overflow-hidden">
+                            <div class="flex items-center justify-between text-xs text-sky-300 font-mono">
+                                <span class="flex items-center gap-1.5">
+                                    <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                                    OPSPULSE // DISPATCH CONSOLE
+                                </span>
+                                <span class="px-2 py-0.5 rounded bg-white/10 text-white">FYP</span>
+                            </div>
+                            <!-- Mock Dashboard SVG -->
+                            <svg class="w-full h-28 mt-2" viewBox="0 0 360 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="0" y="6" width="110" height="96" rx="8" fill="#FFFFFF" fill-opacity="0.08" stroke="#38BDF8" stroke-opacity="0.35"/>
+                                <rect x="12" y="20" width="60" height="8" rx="4" fill="#38BDF8"/>
+                                <rect x="12" y="38" width="84" height="6" rx="3" fill="#CBD5E1" fill-opacity="0.5"/>
+                                <rect x="12" y="52" width="70" height="6" rx="3" fill="#CBD5E1" fill-opacity="0.35"/>
+                                <rect x="12" y="72" width="46" height="18" rx="5" fill="#10B981" fill-opacity="0.85"/>
+                                
+                                <rect x="124" y="6" width="236" height="96" rx="8" fill="#FFFFFF" fill-opacity="0.06" stroke="#94A3B8" stroke-opacity="0.3"/>
+                                <rect x="138" y="20" width="90" height="8" rx="4" fill="#E2E8F0"/>
+                                <rect x="290" y="18" width="54" height="14" rx="7" fill="#0284C7"/>
+                                <rect x="138" y="42" width="206" height="12" rx="4" fill="#FFFFFF" fill-opacity="0.1"/>
+                                <rect x="138" y="60" width="206" height="12" rx="4" fill="#FFFFFF" fill-opacity="0.1"/>
+                                <rect x="138" y="78" width="140" height="12" rx="4" fill="#38BDF8" fill-opacity="0.25"/>
+                            </svg>
+                        </div>
+
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-2">
+                                <span>Full-Stack Developer &amp; QA Lead</span>
+                                <span>Apr – Sep 2027</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-navy">
+                                OpsPulse — Real-Time Incident &amp; Resource Dispatch System
+                            </h3>
+                            <p class="mt-2.5 text-sm text-slate-600 leading-relaxed flex-1">
+                                Web-based command-and-dispatch prototype enabling operations teams to log incidents, assign field responders, and track resolution status in real time with 95%+ automated test reliability.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">C#</span>
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">ASP.NET Core Web API</span>
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">SQL Server</span>
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Selenium</span>
+                            </div>
+                            <button type="button" onclick="openProjectModal('opspulse')" class="mt-6 w-full py-2.5 px-4 rounded-xl bg-slate-100 text-navy font-semibold text-sm hover:bg-navy hover:text-white transition-colors">
+                                View Case Study
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2: PolyFinTech100 -->
+                    <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col" data-categories="hackathon">
+                        <!-- NOTE: Replace the SVG visual container below with an <img> of your PolyFinTech100 pitch deck slide or Finals team photo -->
+                        <div class="h-48 bg-gradient-to-br from-sky-800 to-navy p-5 flex flex-col justify-between relative overflow-hidden">
+                            <div class="flex items-center justify-between text-xs text-sky-200 font-mono">
+                                <span>POLYFINTECH100 // NETS CATEGORY</span>
+                                <span class="px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 border border-amber-300/30">NATIONAL FINALIST</span>
+                            </div>
+                            <!-- Mock FinTech API Flow SVG -->
+                            <svg class="w-full h-28 mt-2" viewBox="0 0 360 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="10" y="24" width="84" height="62" rx="10" fill="#FFFFFF" fill-opacity="0.12" stroke="#7DD3FC" stroke-opacity="0.5"/>
+                                <text x="52" y="59" text-anchor="middle" fill="#FFFFFF" font-size="11" font-family="Inter, sans-serif" font-weight="600">NETS App</text>
+                                <path d="M98 55 H134" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 3"/>
+                                <rect x="138" y="18" width="94" height="74" rx="10" fill="#0284C7" fill-opacity="0.4" stroke="#38BDF8"/>
+                                <text x="185" y="51" text-anchor="middle" fill="#FFFFFF" font-size="11" font-family="Inter, sans-serif" font-weight="700">Pay-Tech</text>
+                                <text x="185" y="67" text-anchor="middle" fill="#BAE6FD" font-size="10" font-family="Inter, sans-serif">API Layer</text>
+                                <path d="M236 55 H272" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4 3"/>
+                                <rect x="276" y="24" width="74" height="62" rx="10" fill="#10B981" fill-opacity="0.2" stroke="#34D399" stroke-opacity="0.6"/>
+                                <text x="313" y="59" text-anchor="middle" fill="#A7F3D0" font-size="11" font-family="Inter, sans-serif" font-weight="600">Verified</text>
+                            </svg>
+                        </div>
+
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-2">
+                                <span>Developer &amp; Presenter (Team FlowState)</span>
+                                <span>May – Sep 2026</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-navy">
+                                PolyFinTech100 API Hackathon 2026 — Pay-Tech (NETS)
+                            </h3>
+                            <p class="mt-2.5 text-sm text-slate-600 leading-relaxed flex-1">
+                                Payment-technology enhancement prototype for the NETS application ecosystem, advancing to the national Finals with a live technical demo to industry judges.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">API Integration</span>
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Prototyping</span>
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Agile Pitching</span>
+                            </div>
+                            <button type="button" onclick="openProjectModal('polyfintech')" class="mt-6 w-full py-2.5 px-4 rounded-xl bg-slate-100 text-navy font-semibold text-sm hover:bg-navy hover:text-white transition-colors">
+                                View Case Study
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 3: Automated Web Testing Suite & Inventory System -->
+                    <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col" data-categories="qa full-stack">
+                        <!-- NOTE: Replace the SVG visual container below with an <img> of your Eclipse passing test report or a <video> of Selenium running Chrome -->
+                        <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 p-5 flex flex-col justify-between relative overflow-hidden">
+                            <div class="flex items-center justify-between text-xs text-emerald-300 font-mono">
+                                <span>SELENIUM // JUNIT TEST RUNNER</span>
+                                <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">ALL PASSED</span>
+                            </div>
+                            <!-- Mock Test Suite Output SVG -->
+                            <svg class="w-full h-28 mt-2" viewBox="0 0 360 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="0" y="6" width="360" height="98" rx="8" fill="#0F172A" stroke="#334155"/>
+                                <circle cx="18" cy="28" r="6" fill="#10B981"/>
+                                <rect x="34" y="24" width="180" height="8" rx="4" fill="#E2E8F0"/>
+                                <rect x="295" y="24" width="46" height="8" rx="4" fill="#10B981" fill-opacity="0.6"/>
+                                
+                                <circle cx="18" cy="54" r="6" fill="#10B981"/>
+                                <rect x="34" y="50" width="215" height="8" rx="4" fill="#CBD5E1"/>
+                                <rect x="295" y="50" width="46" height="8" rx="4" fill="#10B981" fill-opacity="0.6"/>
+                                
+                                <circle cx="18" cy="80" r="6" fill="#10B981"/>
+                                <rect x="34" y="76" width="155" height="8" rx="4" fill="#94A3B8"/>
+                                <rect x="295" y="76" width="46" height="8" rx="4" fill="#10B981" fill-opacity="0.6"/>
+                            </svg>
+                        </div>
+
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-2">
+                                <span>Developer &amp; QA Engineer</span>
+                                <span>Oct – Nov 2026</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-navy">
+                                Automated Web Testing Suite &amp; Inventory System (EGL206)
+                            </h3>
+                            <p class="mt-2.5 text-sm text-slate-600 leading-relaxed flex-1">
+                                PHP/MySQL product inventory management system paired with a Java Selenium WebDriver automated browser testing suite for repeatable end-to-end QA.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Java</span>
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Selenium WebDriver</span>
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Eclipse / Maven</span>
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">PHP &amp; MySQL</span>
+                            </div>
+                            <button type="button" onclick="openProjectModal('egl206')" class="mt-6 w-full py-2.5 px-4 rounded-xl bg-slate-100 text-navy font-semibold text-sm hover:bg-navy hover:text-white transition-colors">
+                                View Case Study
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 4: MobyRental -->
+                    <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col" data-categories="full-stack">
+                        <!-- NOTE: Replace the SVG visual container below with an <img> screenshot of your MobyRental web interface -->
+                        <div class="h-48 bg-gradient-to-br from-navy-light to-sky-700 p-5 flex flex-col justify-between relative overflow-hidden">
+                            <div class="flex items-center justify-between text-xs text-sky-100 font-mono">
+                                <span>MOBYRENTAL // FULL-STACK WEB APP</span>
+                                <span class="px-2 py-0.5 rounded bg-white/15 text-white">PHP + PDO</span>
+                            </div>
+                            <!-- Mock Web App Cards SVG -->
+                            <svg class="w-full h-28 mt-2" viewBox="0 0 360 110" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <rect x="0" y="8" width="110" height="94" rx="8" fill="#FFFFFF" fill-opacity="0.14"/>
+                                <rect x="10" y="18" width="90" height="44" rx="5" fill="#E0F2FE" fill-opacity="0.25"/>
+                                <rect x="10" y="70" width="60" height="7" rx="3.5" fill="#FFFFFF"/>
+                                <rect x="10" y="84" width="40" height="7" rx="3.5" fill="#7DD3FC"/>
+                                
+                                <rect x="125" y="8" width="110" height="94" rx="8" fill="#FFFFFF" fill-opacity="0.14"/>
+                                <rect x="135" y="18" width="90" height="44" rx="5" fill="#E0F2FE" fill-opacity="0.25"/>
+                                <rect x="135" y="70" width="65" height="7" rx="3.5" fill="#FFFFFF"/>
+                                <rect x="135" y="84" width="45" height="7" rx="3.5" fill="#7DD3FC"/>
+
+                                <rect x="250" y="8" width="110" height="94" rx="8" fill="#FFFFFF" fill-opacity="0.14"/>
+                                <rect x="260" y="18" width="90" height="44" rx="5" fill="#E0F2FE" fill-opacity="0.25"/>
+                                <rect x="260" y="70" width="55" height="7" rx="3.5" fill="#FFFFFF"/>
+                                <rect x="260" y="84" width="42" height="7" rx="3.5" fill="#7DD3FC"/>
+                            </svg>
+                        </div>
+
+                        <div class="p-6 flex-1 flex flex-col">
+                            <div class="flex items-center justify-between text-xs font-semibold text-slate-500 mb-2">
+                                <span>Full-Stack Developer</span>
+                                <span>Jun – Jul 2026</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-navy">
+                                MobyRental — Full-Stack Car Rental Web Application
+                            </h3>
+                            <p class="mt-2.5 text-sm text-slate-600 leading-relaxed flex-1">
+                                End-to-end car rental web platform featuring user registration, secure session-based authentication, vehicle browsing, and reservation history tracking.
+                            </p>
+                            <div class="mt-4 flex flex-wrap gap-1.5">
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">PHP</span>
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">MySQL (PDO)</span>
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">HTML5 &amp; CSS3</span>
+                                <span class="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">JavaScript</span>
+                            </div>
+                            <button type="button" onclick="openProjectModal('mobyrental')" class="mt-6 w-full py-2.5 px-4 rounded-xl bg-slate-100 text-navy font-semibold text-sm hover:bg-navy hover:text-white transition-colors">
+                                View Case Study
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 4. SKILLS & EXPERIENCE SECTION ==================== -->
+        <section id="skills" class="py-16 sm:py-24 bg-white border-b border-slate-200">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-accent">Skills &amp; Background</h2>
+                <p class="mt-2 text-2xl sm:text-3xl font-bold text-navy tracking-tight">
+                    Technical Stack &amp; Experience Timeline
+                </p>
+
+                <!-- Technical Skills Grid (4 Categories) -->
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Category 1 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-navy mb-4">Programming Languages</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">C#</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">Java</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">PHP</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">JavaScript</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">SQL</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">Dart</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">C++</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-navy mb-4">Web, Mobile &amp; API</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">ASP.NET Core MVC/API</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">Flutter</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">HTML5 / CSS3</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">RESTful APIs</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">MySQL (PDO)</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">SQL Server</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-navy mb-4">Testing &amp; Tools</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">Selenium WebDriver</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">Eclipse &amp; Maven</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">Visual Studio</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">VS Code</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">Visual Paradigm (UML)</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">Git / GitHub</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">PowerBI</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+                        <h3 class="text-sm font-bold uppercase tracking-wider text-navy mb-4">Systems &amp; Cloud</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">Windows Server</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">Active Directory</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">Cloud Engineering</span>
+                            <span class="px-3 py-1 rounded-lg bg-white border border-slate-200 text-slate-700 text-xs font-semibold">Agile / Scrum</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience & Education Timeline -->
+                <div class="mt-16">
+                    <h3 class="text-xl font-bold text-navy mb-8">Experience, Education &amp; Leadership</h3>
+                    <div class="relative border-l-2 border-slate-200 pl-6 sm:pl-8 space-y-8">
+
+                        <!-- Item 1 -->
+                        <div class="relative">
+                            <span class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-accent border-4 border-white shadow-sm"></span>
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                                <h4 class="text-lg font-bold text-navy">Software Engineering Intern</h4>
+                                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-sky-50 text-accent w-fit">Oct 2027 – Mar 2028</span>
+                            </div>
+                            <p class="text-sm font-semibold text-slate-700 mt-0.5">NCS Pte Ltd — Singapore</p>
+                            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                                Developed and maintained enterprise web modules in C#, ASP.NET Core, and SQL Server for a public-sector digital services platform. Built RESTful API endpoints, optimised SQL queries, and logged 15+ functional defects via automated regression and UAT checks.
+                            </p>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="relative">
+                            <span class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-navy border-4 border-white shadow-sm"></span>
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                                <h4 class="text-lg font-bold text-navy">Diploma in Infocomm &amp; Media Engineering (Software &amp; Applications)</h4>
+                                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 w-fit">Apr 2025 – May 2028</span>
+                            </div>
+                            <p class="text-sm font-semibold text-slate-700 mt-0.5">Nanyang Polytechnic (NYP) — Singapore</p>
+                            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                                Focused on Software Engineering Practices, Software Security &amp; Testing, Web API Development, Database Modelling &amp; Implementation, and Cross-Platform Mobile App Development.
+                            </p>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="relative">
+                            <span class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-slate-400 border-4 border-white shadow-sm"></span>
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                                <h4 class="text-lg font-bold text-navy">Part-Time Operations Crew</h4>
+                                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 w-fit">2026 – 2027</span>
+                            </div>
+                            <p class="text-sm font-semibold text-slate-700 mt-0.5">Nakoko — Singapore</p>
+                            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                                Managed weekly cleaning and operational task rotations for a team of 6 part-time staff, maintaining hygiene standards and onboarding new crew members.
+                            </p>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="relative">
+                            <span class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-slate-400 border-4 border-white shadow-sm"></span>
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                                <h4 class="text-lg font-bold text-navy">Active Member &amp; Event Organiser</h4>
+                                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 w-fit">2025 – 2028</span>
+                            </div>
+                            <p class="text-sm font-semibold text-slate-700 mt-0.5">NYP Ultimate Frisbee Club</p>
+                            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                                Organised a 30–40 participant beach bonding event, coordinated documentation for a 3D2N overseas training trip to Johor Bahru, designed custom team jerseys, and managed tournament rosters for Chuckfest 2025 and Pesta Sukan 2026.
+                            </p>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="relative">
+                            <span class="absolute -left-[33px] sm:-left-[41px] top-1 w-4 h-4 rounded-full bg-navy border-4 border-white shadow-sm"></span>
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                                <h4 class="text-lg font-bold text-navy">Platoon Commander (Officer)</h4>
+                                <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 w-fit">Jan 2022 – Nov 2024</span>
+                            </div>
+                            <p class="text-sm font-semibold text-slate-700 mt-0.5">Singapore Armed Forces (SAF)</p>
+                            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+                                Led, trained, and mentored a platoon of 30+ personnel, overseeing operational readiness, multi-stage training schedules, logistics allocation, and strict safety compliance in high-pressure environments.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 5. CONTACT SECTION ==================== -->
+        <section id="contact" class="py-16 sm:py-24 bg-slate-50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-navy rounded-3xl p-8 sm:p-12 text-white shadow-xl">
+                    <div class="max-w-2xl">
+                        <h2 class="text-xs font-bold uppercase tracking-widest text-sky-300">Get In Touch</h2>
+                        <p class="mt-2 text-2xl sm:text-3xl font-bold tracking-tight">
+                            Let's connect about Software Engineering roles
+                        </p>
+                        <p class="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed">
+                            I am actively seeking a full-time Junior Software Engineer position in Singapore. Feel free to reach out via email, phone, or connect with me online.
+                        </p>
+                    </div>
+
+                    <!-- Contact Cards Grid -->
+                    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <a href="mailto:lohjunjiemalcolm@gmail.com" class="flex items-center p-4 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/10 transition-all">
+                            <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-300 flex items-center justify-center mr-4 shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="overflow-hidden">
+                                <p class="text-xs text-slate-300">Email</p>
+                                <p class="text-sm font-semibold text-white truncate">lohjunjiemalcolm@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:+6597571719" class="flex items-center p-4 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/10 transition-all">
+                            <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-300 flex items-center justify-center mr-4 shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-300">Phone</p>
+                                <p class="text-sm font-semibold text-white">+65 9757 1719</p>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center p-4 rounded-2xl bg-white/10 border border-white/10">
+                            <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-300 flex items-center justify-center mr-4 shrink-0">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-300">Location</p>
+                                <p class="text-sm font-semibold text-white">Singapore</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social & Resume Links -->
+                    <div class="mt-8 pt-6 border-t border-white/15 flex flex-wrap items-center gap-4">
+                        <a href="https://github.com/malcolmloh" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-sm font-semibold transition-all">
+                            GitHub
+                        </a>
+                        <!-- NOTE: Replace # with your actual LinkedIn profile URL -->
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-sm font-semibold transition-all">
+                            LinkedIn
+                        </a>
+                        <a href="./Malcolm_Loh_Resume_ST_Engineering_MSS.pdf" download class="inline-flex items-center px-5 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-white text-sm font-semibold transition-all shadow-sm sm:ml-auto">
+                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                            Download Resume (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-white border-t border-slate-200 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+            <p>&copy; <span id="current-year"></span> Loh Jun Jie Malcolm. All rights reserved.</p>
+            <p>Built with HTML, Tailwind CSS &amp; JavaScript — Hosted on GitHub Pages</p>
+        </div>
+    </footer>
+
+    <!-- ==================== PROJECT CASE STUDY MODAL ==================== -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/60 backdrop-blur-sm p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200">
+            <div class="sticky top-0 bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between">
+                <div>
+                    <span id="modal-timeline" class="text-xs font-semibold uppercase tracking-wider text-accent"></span>
+                    <h3 id="modal-title" class="text-xl font-bold text-navy mt-0.5"></h3>
+                </div>
+                <button type="button" onclick="closeProjectModal()" class="p-2 rounded-lg text-slate-400 hover:text-navy hover:bg-slate-100 transition-colors" aria-label="Close Case Study">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="p-6 space-y-6">
+                <!-- Tech Stack Pills -->
+                <div id="modal-tech" class="flex flex-wrap gap-2"></div>
+
+                <!-- 4 ICA 2 Case Study Pillars -->
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-navy mb-1.5">1. Project Overview</h4>
+                        <p id="modal-overview" class="text-sm text-slate-700 leading-relaxed"></p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-navy mb-1.5">2. My Role</h4>
+                        <p id="modal-role" class="text-sm text-slate-700 leading-relaxed"></p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-navy mb-1.5">3. Work Process</h4>
+                        <p id="modal-process" class="text-sm text-slate-700 leading-relaxed"></p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-sky-50 border border-sky-200">
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-navy mb-1.5">4. Results Achieved</h4>
+                        <p id="modal-results" class="text-sm text-slate-800 font-medium leading-relaxed"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-6 py-4 bg-slate-50 border-t border-slate-200 flex justify-end">
+                <button type="button" onclick="closeProjectModal()" class="px-5 py-2.5 rounded-xl bg-navy text-white text-sm font-semibold hover:bg-navy-light transition-colors">
+                    Close Case Study
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== INTERACTIVE SCRIPTS ==================== -->
+    <script>
+        // Set dynamic copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function toggleMobileMenu() {
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            menuIconOpen.classList.toggle('hidden', !isHidden);
+            menuIconClose.classList.toggle('hidden', isHidden);
+            mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    toggleMobileMenu();
+                }
+            });
+        });
+
+        // Project Category Filter
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const selectedFilter = btn.getAttribute('data-filter');
+
+                // Update active button styling
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-navy', 'text-white', 'shadow-sm');
+                    b.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+                });
+                btn.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+                btn.classList.add('bg-navy', 'text-white', 'shadow-sm');
+
+                // Filter cards
+                projectCards.forEach(card => {
+                    const categories = card.getAttribute('data-categories').split(' ');
+                    if (selectedFilter === 'all' || categories.includes(selectedFilter)) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Project Case Study Data (Aligned with ICA 2 Rubric)
+        const projectData = {
+            opspulse: {
+                title: 'OpsPulse — Real-Time Incident & Resource Dispatch System (FYP)',
+                timeline: 'Final Year Project • Apr – Sep 2027',
+                tech: ['C#', 'ASP.NET Core Web API', 'SQL Server', 'HTML5 / CSS3 / JS', 'Selenium'],
+                overview: 'A web-based command-and-dispatch prototype enabling operations teams to log incidents, assign field responders, and track resolution status in real time.',
+                role: 'Full-Stack Developer & QA Lead (Apr – Sep 2027)',
+                process: 'Architected a normalised relational database in SQL Server with role-based access control (Admin, Dispatcher, Responder) and audit logging for operational traceability. Built the RESTful API and frontend dashboard, then wrote an automated Selenium test suite to validate login, ticket creation, and status updates.',
+                results: 'Delivered a working end-to-end dispatch prototype achieving 95%+ automated test pass reliability ahead of final project evaluation.'
+            },
+            polyfintech: {
+                title: 'PolyFinTech100 API Hackathon 2026 — Pay-Tech (NETS Category)',
+                timeline: 'National Hackathon • May – Sep 2026',
+                tech: ['API Integration', 'Prototyping', 'Agile Pitching'],
+                overview: 'A payment-technology enhancement prototype for the NETS application ecosystem developed by Team FlowState (NYP) for the national PolyFinTech100 API Hackathon.',
+                role: 'Developer & Presenter (May – Sep 2026)',
+                process: 'Collaborated in an agile sprint to design user flows, integrate API-driven payment workflows, and prepare a live technical demonstration under competition deadlines.',
+                results: 'Advanced to the national PolyFinTech100 API Hackathon 2026 Finals, delivering a structured technical pitch and live product demo to industry judges.'
+            },
+            egl206: {
+                title: 'Automated Web Testing Suite & Inventory System (EGL206)',
+                timeline: 'Software Engineering Practices • Oct – Nov 2026',
+                tech: ['Java', 'Selenium WebDriver', 'Eclipse', 'Maven', 'PHP', 'MySQL'],
+                overview: 'A PHP/MySQL product inventory management system paired with a Java-based automated browser testing suite built for Software Engineering Practices (EGL206).',
+                role: 'Developer & QA Engineer (Oct – Nov 2026)',
+                process: 'Modelled system requirements using UML diagrams and implemented modular PHP/MySQL code with version control. Developed automated end-to-end Selenium WebDriver and ChromeDriver test scripts in Java (Eclipse/Maven) to validate core CRUD and user flows.',
+                results: 'Accelerated defect detection across core inventory workflows and demonstrated repeatable, automated quality assurance practices.'
+            },
+            mobyrental: {
+                title: 'MobyRental — Full-Stack Car Rental Web Application',
+                timeline: 'Full-Stack Web Project • Jun – Jul 2026',
+                tech: ['PHP', 'MySQL (PDO)', 'HTML5', 'CSS3', 'JavaScript'],
+                overview: 'An end-to-end car rental web application supporting user registration, secure session-based authentication, vehicle browsing, and reservation history tracking.',
+                role: 'Full-Stack Developer (Jun – Jul 2026)',
+                process: 'Designed a normalised relational MySQL database and implemented parameterized PDO queries to prevent SQL injection while maintaining transactional accuracy across bookings.',
+                results: 'Delivered a secure, functional full-stack rental platform with clean modular CSS and responsive user flows.'
+            }
+        };
+
+        // Modal Controls
+        const modal = document.getElementById('project-modal');
+
+        function openProjectModal(projectKey) {
+            const data = projectData[projectKey];
+            if (!data) return;
+
+            document.getElementById('modal-timeline').textContent = data.timeline;
+            document.getElementById('modal-title').textContent = data.title;
+            document.getElementById('modal-overview').textContent = data.overview;
+            document.getElementById('modal-role').textContent = data.role;
+            document.getElementById('modal-process').textContent = data.process;
+            document.getElementById('modal-results').textContent = data.results;
+
+            const techContainer = document.getElementById('modal-tech');
+            techContainer.innerHTML = data.tech
+                .map(t => `<span class="px-3 py-1 rounded-lg bg-slate-100 text-navy text-xs font-semibold">${t}</span>`)
+                .join('');
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        // Close modal on backdrop click or Escape key
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeProjectModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                closeProjectModal();
+            }
+        });
+    </script>
+</body>
+</html>
